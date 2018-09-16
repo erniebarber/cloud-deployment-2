@@ -10,7 +10,7 @@ pc = portal.Context()
 request = pc.makeRequestRSpec()
 
 #Set the number of Nodes:
-int numberofnodes = 4
+numberofnodes = 4
 
 #create a LAN
 link = request.LAN("lan")
@@ -24,7 +24,7 @@ for i in range(1, numberofnodes):
     intrface.addAddress(rspec.IPv4Address("192.168.1." + str(i)))
     link.addInterface(intrface)
     #set Node 0 to a public IP
-    if node == "node1" 
+    if node == "node1":
         node.routable_control_ip = True
 
 # Install and execute a script that is contained in the repository.
