@@ -1,3 +1,13 @@
+"""Assignmnet 2 Part 2
+Create 4 nodes and assign the OS and an IP address to each.
+
+
+"""
+
+
+
+
+
 # Import the Portal object.
 import geni.portal as portal
 # Import the ProtoGENI library.
