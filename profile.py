@@ -23,8 +23,8 @@ for i in range(1, numberofnodes):
     intrface.component_id = "eth1" 
     intrface.addAddress(rspec.IPv4Address("192.168.1." + str(i), "255.255.255.0"))
     link.addInterface(intrface)
-    #set Node 0 to a public IP
-    if i==1:
+    #set Node-1 to a public IP
+    if i == 1:
         node.routable_control_ip = "true"
 
 # Install and execute a script that is contained in the repository.
